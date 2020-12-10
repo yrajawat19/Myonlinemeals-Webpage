@@ -1,0 +1,251 @@
+*{
+    margin : 0;
+    padding : 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(27, 26, 26);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78 ;
+}
+
+/* Logo and images */
+#logo{
+    margin: 10px 35px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: gray;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding:3px 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/lily-banse--YHSwy6uqvk-unsplash.jpg') no-repeat center center/cover ;
+    height: 643px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Playball', cursive;
+    
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playball', cursive;
+}
+/* Services Section */
+#services{
+    margin: 50px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 5px 20px;
+    border-radius: 28px;
+    background: #eceeee;
+    margin-bottom: 5px;
+    
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Clients Section */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/brooke-lark-M4E7X3z80PQ-unsplash.jpg') no-repeat center;
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+    opacity: 0.9;
+   }
+
+#client-section .h-primary{
+    color: black;
+    font-family: 'Stalinist One', cursive;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 45px;
+}
+
+#clients img{
+    height:70px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background: url('../img/wallpaperflare.com_wallpaper.jpg') no-repeat center center/cover;
+
+}
+#contact .h-primary{
+    color: black;
+    font-family: 'Stalinist One', cursive;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'PT Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+     background-color: brown;
+     color: white;
+     margin: 17px;
+     font-size: 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.btn1{
+    padding: 10px;
+    border: 2px solid white;
+     background-color: brown;
+     color: white;
+     font-size: 1rem;
+     border-radius: 10px;
+     cursor: pointer;
+     margin-left: 100px;
+     margin-top: 10px;
+}
+
+.center{
+    text-align: center;
+}
